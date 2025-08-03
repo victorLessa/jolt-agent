@@ -98,7 +98,7 @@ function jsBeautifyInput(value: string) {
     </AlertDialogContent>
   </AlertDialog>
   <div class="flex items-center py-4 justify-center min-h-screen bg-gray-100">
-    <div class="w-full max-w-[80vw] mx-auto px-4">
+    <div class="w-full lg:max-w-[80vw] mx-auto px-4">
       <div class="flex flex-col md:flex-row gap-4">
         <Card class="flex-1 min-h-[350px] w-full md:w-1/3">
           <CardHeader>
