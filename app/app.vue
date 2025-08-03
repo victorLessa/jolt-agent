@@ -24,7 +24,7 @@ const outputJson = ref<string>('');
 const inputJson = ref<string>('');
 const joltJson = ref<string>('');
 const typePassword = ref<'text' | 'password'>('password');
-const isAuthenticated = ref(true);
+const isAuthenticated = ref(false);
 const password = ref("");
 const vertexIsBusy = ref(false)
 
