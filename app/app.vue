@@ -97,10 +97,10 @@ function jsBeautifyInput(value: string) {
       </AlertDialogFooter>
     </AlertDialogContent>
   </AlertDialog>
-  <div class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="flex items-center py-4 justify-center min-h-screen bg-gray-100">
     <div class="w-full max-w-[80vw] mx-auto px-4">
-      <div class="flex flex-row gap-4">
-        <Card class="flex-1 min-h-[350px]">
+      <div class="flex flex-col md:flex-row gap-4">
+        <Card class="flex-1 min-h-[350px] w-full md:w-1/3">
           <CardHeader>
             <div class="flex items-center justify-between w-full">
               <CardTitle>
@@ -113,11 +113,11 @@ function jsBeautifyInput(value: string) {
           </CardHeader>
           <CardContent class="h-full flex flex-col">
             <Codemirror v-model="inputJson" placeholder="Insira o JSON aqui" class="flex-1 h-full"
-              style="width: 440px; overflow-x: auto;" :extensions="extensions" :autofocus="true" :indent-with-tab="true"
-              :tab-size="2" />
+              style="width: 440px; max-width: 100%; overflow-x: auto;" :extensions="extensions" :autofocus="true"
+              :indent-with-tab="true" :tab-size="2" />
           </CardContent>
         </Card>
-        <Card class="flex-1 min-h-[350px]">
+        <Card class="flex-1 min-h-[350px] w-full md:w-1/3">
           <CardHeader>
             <div class="flex items-center justify-between w-full">
               <CardTitle>
@@ -130,10 +130,11 @@ function jsBeautifyInput(value: string) {
           </CardHeader>
           <CardContent class="h-full flex flex-col">
             <Codemirror v-model="outputJson" placeholder="Insira o JSON aqui" class="flex-1 h-full"
-              style="width: 440px; overflow-x: auto;" :extensions="extensions" :indent-with-tab="true" :tab-size="2" />
+              style="width: 440px; max-width: 100%; overflow-x: auto;" :extensions="extensions" :indent-with-tab="true"
+              :tab-size="2" />
           </CardContent>
         </Card>
-        <Card class="flex-1 min-h-[350px]">
+        <Card class="flex-1 min-h-[350px] w-full md:w-1/3">
           <CardHeader>
             <div class="flex items-center justify-between w-full">
               <CardTitle>
@@ -147,8 +148,8 @@ function jsBeautifyInput(value: string) {
           </CardHeader>
           <CardContent class="h-full flex flex-col">
             <Codemirror v-model="joltJson" placeholder="Aqui você verá o JSON transformado" class="flex-1 h-full"
-              style="width: 440px; overflow-x: auto;" :disabled="true" :extensions="extensions" :autofocus="true"
-              :indent-with-tab="true" :tab-size="2" />
+              style="width: 440px; max-width: 100%; overflow-x: auto;" :disabled="true" :extensions="extensions"
+              :autofocus="true" :indent-with-tab="true" :tab-size="2" />
           </CardContent>
         </Card>
       </div>
